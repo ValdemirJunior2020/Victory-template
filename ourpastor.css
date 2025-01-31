@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.pastor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.pastor-content {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.pastor-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    box-shadow: 0px 5px 10px rgba(36, 74, 243, 0.3);
+    margin-right: 20px;
+}
+
+.pastor-text {
+    max-width: 500px;
+}
