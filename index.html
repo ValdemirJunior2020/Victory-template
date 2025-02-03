@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victory Worship Center</title>
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
 </head>
 <body>
@@ -19,10 +19,12 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand text-dark" href="index.html">Home Page</a>
+            <!-- Hamburger Menu Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Collapsible Menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -30,6 +32,9 @@
                     <li class="nav-item"><a class="nav-link" href="ourpastor.html">Our Pastor</a></li>
                     <li class="nav-item"><a class="nav-link" href="new-member.html">New Member</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://youtube.com/@victoryworshipcenter?si=VUiFLik8y-f-p4gV" target="_blank">
+                        <i class="fab fa-youtube text-danger"></i> Watch on YouTube
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -37,50 +42,74 @@
 
     <!-- Fullscreen Video Background -->
     <div class="content-wrapper">
+        <!-- Video Background -->
         <div class="video-container">
             <video autoplay loop muted playsinline>
                 <source src="https://video-previews.elements.envatousercontent.com/h264-video-previews/b3dc4fdb-0786-49b0-9de9-9239a4a70bed/18015136.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
 
-          <!-- Centered "Victory Worship Center" and "Live" Text & Icons -->
-<div class="live-container">
-    <p class="victory-text">Victory Worship Center</p> <!-- Added this line -->
-    <p class="live-text">Live</p>
-    <div class="social-buttons">
-        <a href="https://youtube.com/@victoryworshipcenter" target="_blank" class="social-icon youtube">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.facebook.com/groups/VictoryworshipcenterLW/media" target="_blank" class="social-icon facebook">
-            <i class="fab fa-facebook"></i>
-        </a>
+        <!-- Content Overlay (Updated with YouTube & Facebook Icons) -->
+        <div class="content-overlay text-center">
+            <h1>Welcome to Our Church</h1>
+            <div class="social-buttons">
+                <a href="https://youtube.com/@victoryworshipcenter?si=VUiFLik8y-f-p4gV" target="_blank" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/groups/VictoryworshipcenterLW/media" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            <!-- Centered "Live" Text & Icons -->
+            <div class="live-container">
+                <p class="live-text">Live</p>
+                <div class="social-buttons">
+                    <a href="https://youtube.com/@victoryworshipcenter" target="_blank" class="social-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/groups/VictoryworshipcenterLW/media" target="_blank" class="social-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
 
     <!-- Footer -->
     <footer class="footer text-center py-3">
         <div class="container">
             <h4>Victory Worship Center</h4>
+            <p>1915 N A St, Lake Worth Beach, FL 33460</p>
+            <p>Phone: <a href="tel:+15615850130">(561) 585-0130</a></p>
             <p>© 2025 All Rights Reserved.</p>
 
+            <!-- Social Media Icons -->
             <!-- Social Media Icons in Footer -->
             <div class="social-links">
+                <a href="https://www.facebook.com/groups/VictoryworshipcenterLW/media" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/victoryworshipcenter" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@victoryworshipcenter?si=VUiFLik8y-f-p4gV" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.facebook.com/groups/VictoryworshipcenterLW/media" target="_blank" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
                 <a href="https://youtube.com/@victoryworshipcenter" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
             </div>
+            <p class="copyright">© 2025 Victory Worship Center. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- YouTube Video Section -->
+    <div class="youtube-container text-center my-4">
     <!-- YouTube Video Section (After Footer) -->
     <div class="youtube-container text-center my-5">
         <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/vLi_qeC99MU?autoplay=1&mute=0" 
             title="Victory Worship Center Live Stream" 
             frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
     </div>
+    
 
+    <!-- Bootstrap JS (Required for Navbar Toggle) -->
     <!-- First Image Section (Static Images) -->
     <div class="container my-5">
         <div class="row">
@@ -95,7 +124,6 @@
             </div>
         </div>
     </div>
-
     <!-- Second Image Carousel (4 Image Cards) -->
     <div id="imageCarousel2" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-inner">
@@ -112,7 +140,6 @@
                 <img src="https://plus.unsplash.com/premium_photo-1664006989152-e70f1d14a9b3?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Church Event 4">
             </div>
         </div>
-
         <!-- Carousel Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel2" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,7 +150,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 

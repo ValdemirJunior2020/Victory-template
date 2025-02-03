@@ -1,4 +1,4 @@
-/* Ensure full-page height & proper layout */
+/* Global Styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -6,32 +6,16 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-/* Wrapper to push footer down */
-.content-wrapper {
+/* Main Container to Push Footer Down */
+.main-container {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Navbar Styling */
-.navbar {
-    background-color: rgb(20, 35, 243) !important; /* Blue */
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    padding: 10px 20px;
-}
-
-/* Navbar links */
-.navbar-nav .nav-link {
-    color: white !important;
     padding: 10px;
 }
 
-/* Fullscreen Video Background */
+/* Video Background */
 .video-container {
     width: 100vw;
     height: 100vh;
@@ -52,52 +36,53 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
     z-index: 10;
+    color: white;
 }
 
-/* "Live" Text Styling */
 .live-text {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Social Media Buttons Centered */
+/* Social Media Buttons in Overlay */
 .social-buttons {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Social Icons Styling */
 .social-icon {
     font-size: 40px;
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Facebook: Blue */
-.social-icon.facebook {
-    color: #1877F2;
+.social-icon:hover {
+    transform: scale(1.1);
 }
 
-/* YouTube: Red */
-.social-icon.youtube {
+.youtube-icon:hover {
     color: #FF0000;
+}
+
+.facebook-icon:hover {
+    color: #1877F2 !important; /* Facebook Blue */
 }
 
 /* Footer */
 .footer {
     width: 100%;
-    background-color: #94c6f7 !important;  /* Light blue */
+    background-color: #94c6f7 !important; /* Light blue */
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
 }
 
-/* Social Icons in Footer */
+/* Social Media Icons in Footer */
 .footer .social-links {
     margin-top: 10px;
     display: flex;
@@ -112,22 +97,8 @@ html, body {
     transition: color 0.3s ease-in-out;
 }
 
-/* Hover Effects */
-.social-icon:hover {
-    transform: scale(1.1);
-}
-
-.social-icon.youtube:hover {
-    color: darkred;
-}
-
-.social-icon.facebook:hover {
-    color: #0a5ed8;
-}
-
 /* YouTube Video Section */
 .youtube-container {
-    width: 100%;
     max-width: 800px;
     margin: 40px auto 80px; /* Extra bottom margin to prevent overlap */
     padding-bottom: 56.25%;
@@ -167,10 +138,6 @@ html, body {
     padding-bottom: 100px; /* Extra space for scrolling */
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
 /* Resize Second Carousel Images */
 #imageCarousel2 .carousel-inner img {
     width: 80%; /* Adjust width to 80% of the container */
@@ -180,7 +147,21 @@ html {
     border-radius: 10px; /* Adds rounded corners */
 }
 
-/* Ensure Carousel is fully visible */
+/* Ensure Second Carousel is fully visible */
 #imageCarousel2 {
     margin-bottom: 50px;
+}
+
+/* Copyright Section */
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Fix for YouTube and Facebook icons */
+.social-icon.youtube i {
+    color: #FF0000 !important; /* YouTube Red */
+}
+
+.social-icon.facebook i {
+    color: #1877F2 !important; /* Facebook Blue */
 }
