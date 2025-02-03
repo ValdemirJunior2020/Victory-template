@@ -16,7 +16,7 @@ html, body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: rgb(20, 35, 243) !important;
+    background-color: rgb(20, 35, 243) !important; /* Blue */
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -29,11 +29,12 @@ html, body {
     padding: 10px;
 }
 
-/* Ensures navbar items align properly */
+/* Ensure navbar items align properly */
 .navbar-toggler {
     border: none;
     outline: none;
 }
+
 
 
 /* Video background */
