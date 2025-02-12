@@ -174,3 +174,16 @@ html, body {
 .social-icon.facebook i {
     color: #1877F2 !important; /* Facebook Blue */
 }
+/* Make video smaller */
+.small-video {
+    width: 60vw; /* Set width to 60% of the viewport */
+    max-width: 600px; /* Prevent it from becoming too large */
+    margin: 20px auto; /* Center it */
+    overflow: hidden;
+}
+
+.small-video video {
+    width: 100%; /* Make the video fit inside */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
